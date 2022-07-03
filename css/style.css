@@ -37,6 +37,7 @@ header a {
 }
 .menu {
     display:flex;
+    transition:all 0.4s ease;
 }
 .menu li a {
     text-transform: uppercase;
@@ -88,6 +89,7 @@ header a {
     font-size:100px;
     margin-top:-10px;
     letter-spacing: 0.02em;
+    width:600px;
 }
 .offer p {
     font-size:30px;
@@ -141,4 +143,21 @@ section {
 .gallery img:hover {
     box-shadow:0 20px 40px #000;
     transform: scale(1.1);
+}
+
+.menu-open {
+    border:none;
+    background:none;
+    display:none;
+}
+.header .show-menu {
+    display:block;
+    padding:40px 20px 20px 40px;
+    position:absolute;
+    width:50%;
+    left:0;
+    top:0;
+}
+.header .show-menu li {
+    margin-right: 40px;
 }
